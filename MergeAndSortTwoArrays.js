@@ -17,7 +17,7 @@ function mergeArraysLong(arr1, arr2) {
     return newArr;
   }
 
-function mergeArraysShort(a, b) {
+function mergeArrays(a, b) {
   return [...new Set(a.concat(b))].sort((a,b) => a-b);
 
   /* EXPLANATION:
