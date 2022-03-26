@@ -1,0 +1,72 @@
+/*************************
+/* BASE STYLES
+/*************************/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2  {
+    padding-left: 7%;
+}
+
+h2:nth-child(4), .underline:nth-child(3){
+    padding-left: 7%;
+}
+
+h3, h4, p{
+    margin-left:2.5%;
+}
+
+section {
+    margin-left:18%;
+}
+
+/*************************
+/* ROOT FONT STYLE
+/*************************/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: rgb(248, 248, 248);
+    color: white;
+    margin-right: 16em;
+}
+
+/*************************
+/* BACKGROUNDS
+/*************************/
+
+body {
+    background: #272822;
+}
+
+.background-black {
+    background-color: black;
+    border-radius: 1px;
+    color: white;
+    padding: 0.3% 0.6%;
+}
+
+/*************************
+/* TEXT DECORATIONS
+/*************************/
+
+.underline {
+    display: block;
+    border-bottom: 1px solid grey;
+}
+
+.underline:nth-child(3) {
+    margin-left: 7%;
+}
+
+.annotation {
+    text-align: center;
+    font-size: 2rem;
+}
