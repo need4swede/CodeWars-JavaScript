@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/prism.css">
+    <title>CodeWars - Need4Swede</title>
+</head>
+<body>
+    <h2>The Function</h2>
+    <section>
+<!-- CODE EXAMPLE START -->
+<pre><code class="language-javascript">multiplesOf3or5(number)
+
+/*
+    Returns the sum of all the multiples of 3 or 5 below the number passed in. 
+    Additionally, if the number is negative, return 0 (for languages that do have them).
+
+    If the number is a multiple of both 3 and 5, it only counts it once.
+*/
+
+multiplesOf3or5(10); 
+// 23
+
+multiplesOf3or5(88);
+// 1845
+</code></pre>
+<!-- CODE EXAMPLE END -->
+    <p><strong>Solution by</strong> - <a href="https://github.com/need4swede" target="_blank"><span class="background-black">Need4Swede</span></a></p>
+    </section>
+    <div class="underline"></div>
+    <h2>How it works</h2>
+    <section class="functions">
+<!-- CODE START -->
+<pre><code class="language-javascript">function multiplesOf3or5(number){
+
+    // Create new Array
+    let numArr = [];
+
+    // Initalize Sum
+    let sum = 0;
+
+    // Count up to the passed-in number  
+    for(let i = 1; i < number; i++){
+        if(i % 3 == 0 && i % 5 == 0){
+            // If the number is divisible by 3 and 5, add it to our new array
+            numArr.push(i);
+        }
+        else if(i % 3 == 0 || i % 5 == 0){
+            // If the number is divisible by 3 or 5, add it to our new array
+            numArr.push(i)
+        }}
+
+    // For every number in our array, add it to the sum
+    numArr.forEach(element => {
+        sum = element + sum;
+    })
+
+    // Return the sum total
+        return sum
+}
+</code></pre>
+<!-- CODE END -->
+    <!-- CODEWARS LINK -->
+    <p><strong>Try it yourself</strong> - <a href="https://www.codewars.com/kata/514b92a657cdc65150000006/train/javascript" target="_blank"><span class="background-black">CodeWars Source</span></a></p>
+    </section>
+    </div>
+    <!-- CODE JS FILE -->
+    <script src="Multiples-of-3-or-5.js"></script>
+    <!-- PRISM JS FILE -->
+    <script src="../assets/prism.js"></script>
+</body>
+</html>
