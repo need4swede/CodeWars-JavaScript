@@ -8,6 +8,7 @@ a {
 }
 
 h2  {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-left: 7%;
 }
 
@@ -43,7 +44,7 @@ body {
 /*************************/
 
 body {
-    background: #272822;
+    background: #17191d;
 }
 
 .background-black {
