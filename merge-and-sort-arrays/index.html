@@ -33,27 +33,28 @@ mergeArrays([2, 155, 20], [51, 4241, 33, 88, 24]);
     <section class="functions">
 <!-- CODE START -->
 <pre><code class="language-javascript">function mergeArrays(array1, array2) {
-// Create a new array to store combined arrays in
-let newArr = [];
 
-// Add all numbers in first array to our new array
-array1.forEach(numberInArray => {
-  newArr.push(numberInArray);
-})
+  // Create a new array to store combined arrays in
+  let newArr = [];
 
-// Add all numbers in second array to our new array
-array2.forEach(numberInArray => {
-  newArr.push(numberInArray);
-})
+  // Add all numbers in first array to our new array
+  array1.forEach(numberInArray => {
+    newArr.push(numberInArray);
+  })
 
-// Sort our new array in ascending order
-newArr.sort((a, b) => a - b);
+  // Add all numbers in second array to our new array
+  array2.forEach(numberInArray => {
+    newArr.push(numberInArray);
+  })
 
-// Remove any duplicates from the array
-newArr = [...new Set(newArr)];
+  // Sort our new array in ascending order
+  newArr.sort((a, b) => a - b);
 
-// Return the resulting array
-return newArr;
+  // Remove any duplicates from the array
+  newArr = [...new Set(newArr)];
+
+  // Return the resulting array
+  return newArr;
 }
 </code></pre>
 <!-- CODE END -->
