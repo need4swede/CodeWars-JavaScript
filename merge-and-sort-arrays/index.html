@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="stylesheet" id="css" href="../assets/codeblocks.css">
-    <link href="vc-toggle-switch.css" rel="stylesheet">
+    <link href="vc-toggle-switch.css" rel="stylesheet" />
     <title>CodeWars - Need4Swede</title>
 </head>
 <header>
-  <div class="vc-toggle-container">
-    <label class="vc-small-switch">
-      <input type="checkbox" class="vc-switch-input" />
-      <span class="vc-switch-label" data-on="Yes" data-off="No"></span>
-      <span class="vc-switch-handle"></span>
+  <div class="colorful-switch">
+    <input type="checkbox" class="colorful-switch__checkbox" id="colorful-switch-cb" />
+    <label class="colorful-switch__label" for="colorful-switch-cb">
+      <span class="colorful-switch__bg"></span>
+      <span class="colorful-switch__dot"></span>
+      <span class="colorful-switch__on">
+        <span class="colorful-switch__on__inner"></span>
+      </span>
+      <span class="colorful-switch__off"></span>
     </label>
   </div>
 </header>
