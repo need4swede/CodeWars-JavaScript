@@ -62,7 +62,8 @@ return newArr;
 <p class="annotation">Alternatively, you can write it as one line...</p>
 <!-- CODE ALT START-->
 <pre><code class="language-javascript">function mergeArrays(a, b) {
-return [...new Set(a.concat(b))].sort((a,b) => a-b);
+
+  return [...new Set(a.concat(b))].sort((a,b) => a-b);
 
   /* EXPLANATION:
     [...new Set()]
