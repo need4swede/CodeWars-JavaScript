@@ -89,18 +89,16 @@ body {
 /* SWITCH BUTTON
 /*************************/
 
-  .colorful-switch {
+.colorful-switch {
     position: absolute;
-    left: 86.5%;
-    top: 15%;
-    width: 70px;
-    height: 30px;
+    left: 81.5%;
+    top: 73.5%;
+    width: 120px;
+    height: 22.5px;
     margin-left: -140px;
     margin-top: -60px;
-    border-radius: 50px;
-    background: #cfcfcf;
-  }
-  .colorful-switch__label {
+}
+.colorful-switch__label {
     z-index: 1;
     overflow: hidden;
     position: absolute;
@@ -110,25 +108,25 @@ body {
     height: 100%;
     border-radius: 50px;
     cursor: pointer;
-  }
-  .colorful-switch__bg {
+}
+.colorful-switch__bg {
     position: absolute;
     left: 0;
     top: 0;
     width: 840px;
     height: 100%;
-    background: linear-gradient(90deg, #14DCD6 0, #10E7BD 280px, #EF9C29 560px, #E76339 100%);
+    background: linear-gradient(90deg, #E76339 0, #EF9C29 280px, #10E7BD 560px, #14DCD6 100%);
     transition: transform 0.5s;
     transform: translate3d(-560px, 0, 0);
-  }
-  .colorful-switch__checkbox:checked ~ .colorful-switch__label .colorful-switch__bg {
+}
+.colorful-switch__checkbox:checked ~ .colorful-switch__label .colorful-switch__bg {
     transform: translate3d(0, 0, 0);
-  }
-  .colorful-switch__on__inner {
+}
+.colorful-switch__on__inner {
     position: absolute;
     width: 100%;
     height: 100%;
     transition: transform 0.25s 0s cubic-bezier(0.52, -0.96, 0.51, 1.28);
     transform-origin: 100% 50%;
     transform: rotate(45deg) scale(0) translateZ(0);
-  }
+}
