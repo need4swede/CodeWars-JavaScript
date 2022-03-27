@@ -5,11 +5,11 @@ function swapColors(){
     isLight = !isLight;
     if (isLight){
         document.getElementById('css').href='../assets/codeblocks-light.css';
-        document.body.style.backgroundColor = "#f5f5e9";
+        document.body.style.backgroundColor = "#fffcf2";
         document.body.style.color = "black";
         let preTag = document.querySelectorAll('pre')
         preTag.forEach(element => {
-            element.style.border = "2px solid black";
+            element.style.border = "1px solid grey";
         })
     }
     else {
