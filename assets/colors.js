@@ -11,6 +11,7 @@ function swapColors(){
         preTag.forEach(element => {
             element.style.border = "1px solid grey";
         })
+        document.getElementById('color-mode-text').innerText = "Light Mode";
     }
     else {
         document.getElementById('css').href='../assets/codeblocks.css';
@@ -20,6 +21,7 @@ function swapColors(){
         preTag.forEach(element => {
             element.style.border = "none";
         })
+        document.getElementById('color-mode-text').innerText = "Dark Mode";
     }
 }
 
