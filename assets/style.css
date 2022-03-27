@@ -115,7 +115,7 @@ body {
     top: 0;
     width: 840px;
     height: 100%;
-    background: linear-gradient(90deg, #E76339 0, #EF9C29 280px, #10E7BD 560px, #14DCD6 100%);
+    background: linear-gradient(90deg, #ffd900 0, #efa029 280px, #10E7BD 560px, #14DCD6 100%);
     transition: transform 0.5s;
     transform: translate3d(-560px, 0, 0);
 }
