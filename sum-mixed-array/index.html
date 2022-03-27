@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" id="css" href="../assets/codeblocks.css">
+    <title>CodeWars - Need4Swede</title>
+</head>
+<header>
+  <div class="colorful-switch">
+    <input type="checkbox" class="colorful-switch__checkbox" id="colorful-switch-cb" />
+    <label class="colorful-switch__label" for="colorful-switch-cb">
+      <span class="colorful-switch__bg"></span>
+      <span class="colorful-switch__dot"></span>
+      <span class="colorful-switch__on">
+        <span class="colorful-switch__on__inner"></span>
+      </span>
+      <span class="colorful-switch__off"></span>
+    </label>
+    <p id="color-mode-text">Dark Mode</p>
+  </div>
+</header>
+<body>
+    <h2>The Function</h2>
+    <section>
+<!-- CODE EXAMPLE START -->
+<pre><code class="language-javascript">sumMix(x)
+
+/*
+  Given an array of integers as strings and numbers, 
+  returns the sum of the array values as if all were numbers.
+*/
+
+sumMix([5, '5']); 
+// 10
+
+sumMix([52, '144', '12', 67]); 
+// 275
+</code></pre>
+<!-- CODE EXAMPLE END -->
+    <p><strong>Solution by</strong> - <a href="https://github.com/need4swede" target="_blank"><span class="background-black">Need4Swede</span></a></p>
+    </section>
+    <div class="underline"></div>
+    <h2>How it works</h2>
+    <section class="functions">
+<!-- CODE START -->
+<pre><code class="language-javascript">function sumMix(x){
+  
+  // Initialize sum
+  let sum = 0;
+  
+  // Convert all passed in elements to Numbers and add them to the sum
+  x.forEach(element => {
+    element = Number(element);
+    sum += element;
+  })
+  
+  // Return the sum
+  return sum;
+
+}
+</code></pre>
+<!-- CODE END -->
+<!-- CODE ALT -->
+<div class="underline"></div>
+<p class="annotation">Alternatively, you can write it like this...</p>
+<!-- CODE ALT START-->
+<pre><code class="language-javascript">function sumMix(x){
+
+  return x.map(a => +a).reduce((a, b) => a + b);
+
+  /* EXPLANATION:
+    TBD
+  */
+
+}
+</code></pre>
+<!-- CODE ALT END -->
+    <!-- CODEWARS LINK -->
+    <p><strong>Try it yourself</strong> - <a href="https://www.codewars.com/kata/57eaeb9578748ff92a000009/train/javascript" target="_blank"><span class="background-black">CodeWars Source</span></a></p>
+    </section>
+    </div>
+    <!-- CODE JS FILE -->
+    <script src="sumMixedArray.js"></script>
+    <!-- CODE BLOCKS JS -->
+    <script src="../assets/codeblocks.js"></script>
+    <script src="../assets/colors.js"></script>
+</body>
+</html>
