@@ -11,7 +11,7 @@ function swapColors(){
         preTag.forEach(element => {
             element.style.border = "1px solid grey";
         })
-        document.getElementById('color-mode-text').innerText = "Light Mode";
+        document.getElementById('color-mode-text').innerText = "Write Mode";
         document.getElementById('jsConsole').src="https://jsconsole.com/"
         document.getElementById('jsConsole').height="200"
     }
@@ -23,7 +23,7 @@ function swapColors(){
         preTag.forEach(element => {
             element.style.border = "none";
         })
-        document.getElementById('color-mode-text').innerText = "Dark Mode";
+        document.getElementById('color-mode-text').innerText = "Read Mode";
         document.getElementById('jsConsole').height="0"
     }
 }
