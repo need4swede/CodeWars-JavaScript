@@ -93,11 +93,11 @@ body {
     position: fixed;
     right: 0;
     top: 23.8%;
-    width: 100%;
-    height: 100%;
+    width: 14%;
+    height: 4%;
     margin-left: -140px;
     margin-top: -60px;
-    opacity: 0;
+    opacity: 1;
 }
 .colorful-switch__label {
     z-index: 1;
