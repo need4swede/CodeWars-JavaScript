@@ -25,4 +25,8 @@ function swapColors(){
     }
 }
 
-
+window.onload = function() {
+    let myiFrame = document.getElementById("jsConsole");
+    let doc = myiFrame.contentDocument;
+    doc.body.innerHTML = doc.body.innerHTML + '<style>/color: white;/style>';
+}
