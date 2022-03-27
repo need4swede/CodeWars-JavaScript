@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" id="css" href="../assets/codeblocks.css">
+    <title>CodeWars - Need4Swede</title>
+</head>
+<header>
+    <div class="colorful-switch">
+      <input type="checkbox" class="colorful-switch__checkbox" id="colorful-switch-cb" />
+      <label class="colorful-switch__label" for="colorful-switch-cb">
+        <span class="colorful-switch__bg"></span>
+        <span class="colorful-switch__dot"></span>
+        <span class="colorful-switch__on">
+          <span class="colorful-switch__on__inner"></span>
+        </span>
+        <span class="colorful-switch__off"></span>
+      </label>
+      <p id="color-mode-text">Dark Mode</p>
+    </div>
+</header>
+<body>
+    <h2>The Function</h2>
+    <section>
+<!-- CODE EXAMPLE START -->
+<pre><code class="language-javascript">squareSum(numbers)
+
+/*
+    Cubes all passed in numbers and sums them up
+    Returns sum total
+*/
+
+squareSum([1, 2, 3]); 
+// 14
+
+squareSum([12, 5, 44]);
+// 2105
+</code></pre>
+<!-- CODE EXAMPLE END -->
+    <p><strong>Solution by</strong> - <a href="https://github.com/need4swede" target="_blank"><span class="background-black">Need4Swede</span></a></p>
+    </section>
+    <div class="underline"></div>
+    <h2>How it works</h2>
+    <section class="functions">
+<!-- CODE START -->
+<pre><code class="language-javascript">function squareSum(numbers){
+
+    // Initialize sum variable
+    let sum = 0;
+    
+    // Cube every number passed in and add it to the sum total
+    numbers.forEach(number => {
+      number **= 2;
+      sum += number;
+    })
+    
+    // Return the sum total
+    return sum;
+}
+</code></pre>
+<!-- CODE END -->
+    <!-- CODEWARS LINK -->
+    <p><strong>Try it yourself</strong> - <a href="https://www.codewars.com/kata/515e271a311df0350d00000f/train/javascript" target="_blank"><span class="background-black">CodeWars Source</span></a></p>
+    </section>
+    </div>
+    <!-- CODE JS FILE -->
+    <script src="squareSum.js"></script>
+    <!-- CODE BLOCKS JS FILE -->
+    <script src="../assets/codeblocks.js"></script>
+    <script src="../assets/colors.js"></script>
+</body>
+</html>
