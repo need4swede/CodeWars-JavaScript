@@ -1,5 +1,26 @@
-const colorSwap = document.querySelector('.colorful-switch').addEventListener('click', swapColors);
+const colorSwap = document.querySelector('#colorful-switch-cb').addEventListener('click', swapColors);
+let isLight = false;
 
 function swapColors(){
-    document.getElementById('css').href='codeblocks-light.css';
+    isLight = !isLight;
+    if (isLight){
+        document.getElementById('css').href='../assets/codeblocks-light.css';
+        document.body.style.backgroundColor = "#f5f5e9";
+        document.body.style.color = "black";
+        let preTag = document.querySelectorAll('pre')
+        preTag.forEach(element => {
+            element.style.border = "2px solid black";
+        })
+    }
+    else {
+        document.getElementById('css').href='../assets/codeblocks.css';
+        document.body.style.backgroundColor = "#17191d";
+        document.body.style.color = "white";
+        let preTag = document.querySelectorAll('pre')
+        preTag.forEach(element => {
+            element.style.border = "none";
+        })
+    }
 }
+
+
