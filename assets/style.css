@@ -90,13 +90,14 @@ body {
 /*************************/
 
 .colorful-switch {
-    position: absolute;
-    left: 86%;
-    top: 19%;
-    width: 70px;
-    height: 18.5px;
+    position: fixed;
+    right: 0;
+    top: 23.8%;
+    width: 100%;
+    height: 100%;
     margin-left: -140px;
     margin-top: -60px;
+    opacity: 0;
 }
 .colorful-switch__label {
     z-index: 1;
@@ -106,8 +107,8 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    border-radius: 50px;
-    cursor: pointer;
+    border-radius: 25px 0 0 25px;
+    cursor:default;
 }
 .colorful-switch__bg {
     position: absolute;
