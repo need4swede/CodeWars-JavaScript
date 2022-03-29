@@ -6,6 +6,7 @@ function swapColors(){
     isLight = !isLight;
     if (isLight){
         document.getElementById('css').href='../assets/codeblocks-light.css';
+        // document.getElementById('consoleCSS').href='./jsconsole_files/console-light.css';
         document.body.style.backgroundColor = "#fffcf2";
         document.body.style.color = "black";
         let preTag = document.querySelectorAll('pre')
@@ -13,9 +14,11 @@ function swapColors(){
             element.style.border = "1px solid grey";
         })
         document.getElementById('color-mode-text').innerText = "Light Mode";
-        document.getElementById('jsConsole').style="background-color: #fffcf2;"
+        // document.getElementById('jsConsole').style="background-color: #fffcf2;"
         // document.getElementById('jsConsole').src="https://jsconsole.com/"
         // document.getElementById('jsConsole').height="200"
+        // document.getElementById('consoleCSS').href="../assets/jsconsole/jsconsole_files/console-light.css";
+        document.getElementById("jsConsole").contentWindow.document.getElementById("consoleCSS").href = "../assets/jsconsole/jsconsole_files/console-light.css";
     }
     else {
         document.getElementById('css').href='../assets/codeblocks.css';
@@ -48,8 +51,8 @@ function consoleButton(){
     }
 }
 
-window.onload = function() {
-    let myiFrame = document.getElementById("jsConsole");
-    let doc = myiFrame.contentDocument;
-    doc.body.innerHTML = doc.body.innerHTML + '<style>/color: white;/style>';
-}
+// window.onload = function() {
+//     let myiFrame = document.getElementById("jsConsole");
+//     let doc = myiFrame.contentDocument;
+//     doc.body.innerHTML = doc.body.innerHTML + '<style>/color: white;/style>';
+// }

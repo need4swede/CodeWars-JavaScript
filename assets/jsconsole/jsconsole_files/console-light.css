@@ -32,7 +32,7 @@ body{
 	color:#abb2bf
 }
 .theme-dark.top .Input{
-	background:#000;
+	background:#fffcf2;
 	-webkit-box-shadow:0 1px 1px hsla(0,0%,57%,.26);
 	box-shadow:0 1px 1px hsla(0,0%,57%,.26)
 }
@@ -71,7 +71,7 @@ body{
 	border-radius:20px;
 	display:inline-block;
 	border:1px solid #2196f3;
-	background:#fff;
+	background:#fffcf2;
 	padding-right:1rem;
 	position:relative;
 	left:1.75rem;
@@ -106,7 +106,7 @@ body{
 	top:0;
 	left:0;
 	right:0;
-	background:#e6e8f2;
+	background:#000000;
 	-webkit-box-shadow:0 1px 1px rgba(0,0,0,.4);
 	box-shadow:0 1px 1px rgba(0,0,0,.4)
 }
@@ -331,10 +331,10 @@ body{
 }
 .string.quote:after,.string.quote:before{
 	content:'"';
-	color:rgb(255, 255, 255)
+	color:rgb(0, 0, 0)
 }
 .bareString.string{
-	color:rgb(255, 255, 255)
+	color:rgb(0, 0, 0)
 }
 .string.toggle{
 	white-space:normal;
@@ -363,13 +363,14 @@ body{
 
 /* EDITS */
 .Input * {
-	color: white !important;
+	color: black !important;
 }
 .Line .prompt, .Line .prompt.error {
-	background: #17191d;
+	background: #fffcf2;
 }
 .Line {
-	color: white;
+	color: rgb(0, 0, 0);
+    background-color: #fffcf2;
 	border-bottom: 1px solid #1e2024;
 }
 .number {
