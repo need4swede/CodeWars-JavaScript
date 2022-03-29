@@ -1,8 +1,10 @@
 const colorSwap = document.querySelector('#colorful-switch-cb').addEventListener('click', swapColors);
 let isLight = false;
+let isConsole = false;
 
 function swapColors(){
     isLight = !isLight;
+    cssLink.href = "./jsconsole_files/console-light.css"; 
     if (isLight){
         document.getElementById('css').href='../assets/codeblocks-light.css';
         document.body.style.backgroundColor = "#fffcf2";
@@ -12,6 +14,8 @@ function swapColors(){
             element.style.border = "1px solid grey";
         })
         document.getElementById('color-mode-text').innerText = "Light Mode";
+        document.getElementById('jsConsole').style="background-color: #fffcf2;"
+        document.getElementById('jsConsole').style=".Filter input {color: black;}"
         // document.getElementById('jsConsole').src="https://jsconsole.com/"
         // document.getElementById('jsConsole').height="200"
     }
@@ -24,6 +28,8 @@ function swapColors(){
             element.style.border = "none";
         })
         document.getElementById('color-mode-text').innerText = "Dark Mode";
+        document.getElementById('jsConsole').style="background-color: #17191d;"
+        document.getElementById('jsConsole').style="color: white;"
         // document.getElementById('jsConsole').height="0"
     }
 }
@@ -31,15 +37,16 @@ function swapColors(){
 const buttonConsole = document.querySelector('#colorful-switch-cb-2').addEventListener('click', consoleButton);
 
 function consoleButton(){
-    isLight = !isLight;
-    if (isLight){
+    isConsole = !isConsole;
+    if (isConsole){
         document.getElementById('console-mode-text').innerText = "Disable Console";
-        // document.getElementById('jsConsole').src="https://jsconsole.com/"
-        // document.getElementById('jsConsole').height="200"
+        document.getElementById('jsConsole').src="../assets/jsconsole/jsconsole.html"
+        document.getElementById('jsConsole').height="200"
     }
     else {
         document.getElementById('console-mode-text').innerText = "Enable Console";
-        // document.getElementById('jsConsole').height="0"
+        document.getElementById('jsConsole').src=""
+        document.getElementById('jsConsole').height="0"
     }
 }
 
