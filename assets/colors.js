@@ -11,9 +11,9 @@ function swapColors(){
         preTag.forEach(element => {
             element.style.border = "1px solid grey";
         })
-        document.getElementById('color-mode-text').innerText = "Write Mode";
-        document.getElementById('jsConsole').src="https://jsconsole.com/"
-        document.getElementById('jsConsole').height="200"
+        document.getElementById('color-mode-text').innerText = "Light Mode";
+        // document.getElementById('jsConsole').src="https://jsconsole.com/"
+        // document.getElementById('jsConsole').height="200"
     }
     else {
         document.getElementById('css').href='../assets/codeblocks.css';
@@ -23,8 +23,8 @@ function swapColors(){
         preTag.forEach(element => {
             element.style.border = "none";
         })
-        document.getElementById('color-mode-text').innerText = "Read Mode";
-        document.getElementById('jsConsole').height="0"
+        document.getElementById('color-mode-text').innerText = "Dark Mode";
+        // document.getElementById('jsConsole').height="0"
     }
 }
 
