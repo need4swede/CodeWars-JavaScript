@@ -167,7 +167,7 @@ body {
     transition: transform 0.5s;
     transform: translate3d(-560px, 0, 0);
 }
-.colorful-switch__checkbox:checked-2 ~ .colorful-switch__label-2 .colorful-switch__bg-2 {
+.colorful-switch__checkbox-2:checked ~ .colorful-switch__label-2 .colorful-switch__bg-2 {
     transform: translate3d(0, 0, 0);
 }
 .colorful-switch__on__inner-2 {
