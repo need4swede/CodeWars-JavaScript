@@ -4,7 +4,6 @@ let isConsole = false;
 
 function swapColors(){
     isLight = !isLight;
-    cssLink.href = "./jsconsole_files/console-light.css"; 
     if (isLight){
         document.getElementById('css').href='../assets/codeblocks-light.css';
         document.body.style.backgroundColor = "#fffcf2";
@@ -15,7 +14,6 @@ function swapColors(){
         })
         document.getElementById('color-mode-text').innerText = "Light Mode";
         document.getElementById('jsConsole').style="background-color: #fffcf2;"
-        document.getElementById('jsConsole').style=".Filter input {color: black;}"
         // document.getElementById('jsConsole').src="https://jsconsole.com/"
         // document.getElementById('jsConsole').height="200"
     }
