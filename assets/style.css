@@ -89,6 +89,8 @@ body {
 /* SWITCH BUTTON
 /*************************/
 
+/* COLOR MODE */
+
 .colorful-switch {
     position: fixed;
     right: 0;
@@ -132,12 +134,57 @@ body {
     transform: rotate(45deg) scale(0) translateZ(0);
 }
 
+/* CONSOLE MODE */
+
+.colorful-switch-2 {
+    position: fixed;
+    right: 0;
+    top: 37.6%;
+    width: 14.5%;
+    height: 3.5%;
+    margin-left: -140px;
+    margin-top: -60px;
+    opacity: 1;
+}
+.colorful-switch__label-2 {
+    z-index: 1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    cursor:default;
+}
+.colorful-switch__bg-2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 840px;
+    height: 100%;
+    background: linear-gradient(90deg, #ffd900 0, #efa029 280px, #10E7BD 560px, #14DCD6 100%);
+    transition: transform 0.5s;
+    transform: translate3d(-560px, 0, 0);
+}
+.colorful-switch__checkbox:checked-2 ~ .colorful-switch__label-2 .colorful-switch__bg-2 {
+    transform: translate3d(0, 0, 0);
+}
+.colorful-switch__on__inner-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.25s 0s cubic-bezier(0.52, -0.96, 0.51, 1.28);
+    transform-origin: 100% 50%;
+    transform: rotate(45deg) scale(0) translateZ(0);
+}
+
 /*************************
 /* MEDIA QUERIES
 /*************************/
 
 @media screen and (max-height: 440px){
-    .colorful-switch {
+    .colorful-switch, .colorful-switch-2 {
         height: 5.5%;
     }
 }
