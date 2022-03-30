@@ -9,18 +9,32 @@
     <title>CodeWars - Need4Swede</title>
 </head>
 <header>
-  <div class="colorful-switch">
-    <input type="checkbox" class="colorful-switch__checkbox" id="colorful-switch-cb" />
-    <label class="colorful-switch__label" for="colorful-switch-cb">
-      <span class="colorful-switch__bg"></span>
-      <span class="colorful-switch__dot"></span>
-      <span class="colorful-switch__on">
-        <span class="colorful-switch__on__inner"></span>
-      </span>
-      <span class="colorful-switch__off"></span>
-    </label>
-    <p id="color-mode-text">Dark Mode</p>
-  </div>
+    <!-- COLOR BUTTON -->
+    <div class="colorful-switch">
+      <input type="checkbox" class="colorful-switch__checkbox" id="colorful-switch-cb"/>
+      <label class="colorful-switch__label" for="colorful-switch-cb">
+        <span class="colorful-switch__bg"></span>
+        <span class="colorful-switch__dot"></span>
+        <span class="colorful-switch__on">
+          <span class="colorful-switch__on__inner"></span>
+        </span>
+        <span class="colorful-switch__off"></span>
+      </label>
+      <p id="color-mode-text">Dark Mode</p>
+    </div>
+    <!-- CONSOLE BUTTON -->
+    <div class="colorful-switch-2">
+      <input type="checkbox" class="colorful-switch__checkbox-2" id="colorful-switch-cb-2"/>
+      <label class="colorful-switch__label-2" for="colorful-switch-cb-2">
+        <span class="colorful-switch__bg-2"></span>
+        <span class="colorful-switch__dot-2"></span>
+        <span class="colorful-switch__on-2">
+          <span class="colorful-switch__on__inner-2"></span>
+        </span>
+        <span class="colorful-switch__off-2"></span>
+      </label>
+      <p id="console-mode-text">Enable Console</p>
+    </div>
 </header>
 <body>
     <h2>The Function</h2>
@@ -41,6 +55,7 @@ sumMix([52, '144', '12', 67]);
 </code></pre>
       <p><strong>Solution by</strong> - <a href="https://need4swede.github.io/CodeWars-JavaScript/" target="_blank"><span class="background-black">Need4Swede</span></a></p>
       <iframe id="jsConsole" src="" width="960" height="0" frameborder="0"></iframe>
+      <iframe id="jsConsole-light" src="" width="960" height="0" frameborder="0"></iframe>
     </section>
 <!-- CODE EXAMPLE END -->
     <div class="underline"></div>
@@ -83,8 +98,6 @@ sumMix([52, '144', '12', 67]);
     <p><strong>Try it yourself</strong> - <a href="https://www.codewars.com/kata/57eaeb9578748ff92a000009/train/javascript" target="_blank"><span class="background-black">CodeWars Source</span></a></p>
     </section>
     </div>
-    <!-- CODE JS FILE -->
-    <script src="sumMixedArray.js"></script>
     <!-- CODE BLOCKS JS -->
     <script src="../assets/codeblocks.js"></script>
     <script src="../assets/colors.js"></script>
