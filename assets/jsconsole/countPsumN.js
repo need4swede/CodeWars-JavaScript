@@ -1,4 +1,4 @@
-function countPositivesSumNegatives(input) {
+function countPsumN(input) {
 
     // If input is empty, return an empty array
     if (input == null || input.length == 0){
