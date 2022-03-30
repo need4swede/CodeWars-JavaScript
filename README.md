@@ -6,3 +6,4 @@ by <a href="https://github.com/need4swede" target="_blank">Need4Swede</a>
 <a href="https://need4swede.github.io/CodeWars-JavaScript/square-sum/index.html">Square Sum</a> // Cubes all passed in numbers and sums them up<br>
 <a href="https://need4swede.github.io/CodeWars-JavaScript/sum-mixed-array/index.html">Sum Mixed Array</a> // Sum of the array cast as numbers<br>
 <a href="https://need4swede.github.io/CodeWars-JavaScript/reverse-string/index.html">Reverse String</a> // Returns the reverse of a string<br>
+<a href="https://need4swede.github.io/CodeWars-JavaScript/inverse-number/index.html">Inverse a Number</a> // Returns the opposite of a number<br>
