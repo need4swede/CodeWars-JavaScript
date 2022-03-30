@@ -8,3 +8,4 @@ by <a href="https://github.com/need4swede" target="_blank">Need4Swede</a>
 <a href="https://need4swede.github.io/CodeWars-JavaScript/reverse-string/index.html">Reverse String</a> // Returns the reverse of a string<br>
 <a href="https://need4swede.github.io/CodeWars-JavaScript/inverse-number/index.html">Inverse a Number</a> // Returns the opposite of a number<br>
 <a href="https://need4swede.github.io/CodeWars-JavaScript/count-p-sum-n/index.html">Count P, Sum N</a> // Count Positives, Sum Negatives<br>
+<a href="https://need4swede.github.io/CodeWars-JavaScript/string-to-array/index.html">String to Array</a> // Convert a string into an array of words<br>
