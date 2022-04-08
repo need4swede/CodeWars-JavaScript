@@ -1,11 +1,11 @@
 ### CodeWars Problems
 by <a href="https://github.com/need4swede" target="_blank">Need4Swede</a>
 
-<a href="https://need4swede.github.io/Codewars-Javascript/multiples-of-3-or-5/index.html">Multiples of 3 or 5</a> // Sum of all multiples of 3 or 5<br>
-<a href="https://need4swede.github.io/Codewars-Javascript/merge-and-sort-arrays/index.html">Merge and Sort Arrays</a> // Merge two arrays and sort them<br>
-<a href="https://need4swede.github.io/Codewars-Javascript/square-sum/index.html">Square Sum</a> // Cubes all passed in numbers and sums them up<br>
-<a href="https://need4swede.github.io/Codewars-Javascript/sum-mixed-array/index.html">Sum Mixed Array</a> // Sum of the array cast as numbers<br>
-<a href="https://need4swede.github.io/Codewars-Javascript/reverse-string/index.html">Reverse String</a> // Returns the reverse of a string<br>
-<a href="https://need4swede.github.io/Codewars-Javascript/inverse-number/index.html">Inverse a Number</a> // Returns the opposite of a number<br>
-<a href="https://need4swede.github.io/Codewars-Javascript/count-p-sum-n/index.html">Count P, Sum N</a> // Count Positives, Sum Negatives<br>
-<a href="https://need4swede.github.io/Codewars-Javascript/string-to-array/index.html">String to Array</a> // Convert a string into an array of words<br>
+<a href="https://need4swede.github.io/Codewars-JavaScript/multiples-of-3-or-5/index.html">Multiples of 3 or 5</a> // Sum of all multiples of 3 or 5<br>
+<a href="https://need4swede.github.io/Codewars-JavaScript/merge-and-sort-arrays/index.html">Merge and Sort Arrays</a> // Merge two arrays and sort them<br>
+<a href="https://need4swede.github.io/Codewars-JavaScript/square-sum/index.html">Square Sum</a> // Cubes all passed in numbers and sums them up<br>
+<a href="https://need4swede.github.io/Codewars-JavaScript/sum-mixed-array/index.html">Sum Mixed Array</a> // Sum of the array cast as numbers<br>
+<a href="https://need4swede.github.io/Codewars-JavaScript/reverse-string/index.html">Reverse String</a> // Returns the reverse of a string<br>
+<a href="https://need4swede.github.io/Codewars-JavaScript/inverse-number/index.html">Inverse a Number</a> // Returns the opposite of a number<br>
+<a href="https://need4swede.github.io/Codewars-JavaScript/count-p-sum-n/index.html">Count P, Sum N</a> // Count Positives, Sum Negatives<br>
+<a href="https://need4swede.github.io/Codewars-JavaScript/string-to-array/index.html">String to Array</a> // Convert a string into an array of words<br>
