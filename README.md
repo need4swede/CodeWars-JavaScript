@@ -1,4 +1,4 @@
-### CodeWars Problems
+### Codewars Problems
 by <a href="https://github.com/need4swede" target="_blank">Need4Swede</a>
 
 <a href="https://need4swede.github.io/Codewars-JavaScript/multiples-of-3-or-5/index.html">Multiples of 3 or 5</a> // Sum of all multiples of 3 or 5<br>
