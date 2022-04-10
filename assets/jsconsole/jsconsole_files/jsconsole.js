@@ -5466,6 +5466,7 @@
             return {
                 value: ":listen [id] - starts remote debugging session\n:import &lt;script_url&gt; to import your own scripts\n:libraries\n:clear\n:history\n:about\n",
                 html: !0
+                // GET VALUE FROM VARIABLE
                 // h().value
             }
         },

@@ -129,3 +129,16 @@ function sumMix(x){
     return sum;
     
 }
+function findCapitals(word){
+  // Initialize our index array
+  let indexArr = [];
+  // Split 'word' into an array of characters
+  word.split("").forEach(function (char, index) {
+    // If a character is in uppercase, add its index to our index array
+    if (char === char.toUpperCase()){
+      indexArr.push(index);
+    }
+  });
+  // Output the array
+  return indexArr;
+}
