@@ -1,6 +1,9 @@
 const colorSwap = document.querySelector('#colorful-switch-cb').addEventListener('click', colorSwap2);
 const buttonConsole = document.querySelector('#colorful-switch-cb-2').addEventListener('click', consoleSwap);
 const cssStyle = document.getElementById('css');
+const goto = document.querySelector('.gotoconsole').addEventListener('click', () => {
+    document.querySelector('#colorful-switch-cb-2').click();
+});
 
 let isLight = false;
 let isConsole = false;
