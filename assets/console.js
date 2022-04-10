@@ -1,5 +1,5 @@
 const colorSwap = document.querySelector('#colorful-switch-cb').addEventListener('click', colorSwap2);
-const buttonConsole = document.querySelector('#colorful-switch-cb-2').addEventListener('click', consoleSwap);
+const buttonConsole = document.querySelector('#colorful-switch-cb-2').addEventListener('click', consoleButton);
 const cssStyle = document.getElementById('css');
 const goto = document.querySelector('.gotoconsole').addEventListener('click', () => {
     document.querySelector('#colorful-switch-cb-2').click();
@@ -19,6 +19,7 @@ function swapColors(){
             element.style.border = "1px solid grey";
         })
         document.getElementById('color-mode-text').innerText = "Light Mode";
+        document.querySelector('.gotoconsole').style="color: black";
     }
     else {
         cssStyle.href='../assets/codeblocks.css';
@@ -31,6 +32,7 @@ function swapColors(){
         document.getElementById('color-mode-text').innerText = "Dark Mode";
         document.getElementById('jsConsole').style="background-color: #17191d;"
         document.getElementById('jsConsole').style="color: white;"
+        document.querySelector('.gotoconsole').style="color: white";
     }
     return isLight;
 }
@@ -58,15 +60,6 @@ function consoleButton(colorMode){
         document.getElementById('jsConsole').height="0"
         document.getElementById('jsConsole-light').src=""
         document.getElementById('jsConsole-light').height="0"
-    }
-}
-
-function consoleSwap(){
-    if (!isLight){ // If light-mode is OFF
-        consoleButton('dark') // Give me dark console
-    }
-    else { // If light-mode is ON
-        consoleButton('light') // Give me light console
     }
 }
 
