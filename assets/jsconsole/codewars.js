@@ -135,7 +135,7 @@ function findCapitals(word){
   // Split 'word' into an array of characters
   word.split("").forEach(function (char, index) {
     // If a character is in uppercase, add its index to our index array
-    if (char === char.toUpperCase()){
+    if (char === char.toUpperCase() && isNaN(char)){
       indexArr.push(index);
     }
   });
