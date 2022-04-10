@@ -3610,7 +3610,8 @@
                 value: function() {
                     r.i(v.b)(), r.i(v.c)(this.console);
                     var t = decodeURIComponent(window.location.search.substr(1));
-                    t ? this.onRun(t) : this.onRun(":welcome")
+                    t ? this.onRun(t) : this.onRun(":welcome");
+                    t ? this.onRun(t) : this.onRun(":import codewars.js");
                 }
             }, {
                 key: "triggerFocus",
@@ -5457,19 +5458,20 @@
         p = function() {
             let scriptName = "<script.js>".replace('<','&lt;').replace('>','&gt;')
             return {
-                value: `Console Mode <strong>Enabled</strong>\nTo import a script, type ':import ${scriptName}'`,
+                value: `Console Mode <strong>Enabled</strong>\nUse ':help' for console commands`,
                 html: !0
             }
         },
         f = function() {
             return {
-                value: ":listen [id] - starts remote debugging session\n:theme dark|light\n:load &lt;script_url&gt; load also supports shortcuts, like `:load jquery`\n:libraries\n:clear\n:history\n:about\n:version\ncopy(<value>) and $_ for last value\n\n" + h().value,
+                value: ":listen [id] - starts remote debugging session\n:import &lt;script_url&gt; to import your own scripts\n:libraries\n:clear\n:history\n:about\n",
                 html: !0
+                // h().value
             }
         },
         h = function() {
             return {
-                value: 'Built by <a href="https://twitter.com/rem" target="_blank">@rem</a> \u2022 <a href="https://github.com/remy/jsconsole" target="_blank">open source</a> \u2022 <a href="https://www.paypal.me/rem/9.99usd" target="_blank">donate</a>',
+                value: 'This is an embedded JavaScript console.\nConsole commands are executed by using a colon ":" followed by the command name\nThis version was built by <a href="https://mafshari.work" target="_blank" style="color:cyan;">@need4swede</a> \u2022 The original was made by <a href="https://twitter.com/rem" target="_blank" style="color:yellow;">@rem</a>',
                 html: !0
             }
         },
@@ -5491,7 +5493,8 @@
                                 t = d[t] || t;
                                 var e = n.createElement("script");
                                 e.src = t, e.onload = function() {
-                                    return a.log("loaded: " + t)
+                                    // return a.log("loaded: " + t)
+                                    return
                                 }, e.onerror = function() {
                                     return a.warn("Failed to load " + t)
                                 }, n.body.appendChild(e)
