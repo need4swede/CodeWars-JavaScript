@@ -31,6 +31,20 @@ function countPsumN(input) {
 
   }
 }
+function filterNums(list){
+// Initialize a an empty array
+let numArr = [];
+
+// Push all numbers to the new array
+list.forEach(element => {
+  if (Number.isFinite(element)){
+    numArr.push(element);
+  };
+});
+
+// Return the new array
+return numArr;
+}
 function findCapitals(word){
 // Initialize our index array
 let indexArr = [];
