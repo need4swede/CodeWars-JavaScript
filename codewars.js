@@ -123,6 +123,12 @@ function mergeArrays(a, b) {
   */
 
 }
+function milisecondsPastMidnight(h, m, s){
+  const seconds = 1000;
+  const minutes = seconds * 60;
+  const hours = minutes * 60;
+  return (h * hours) + (m * minutes) + (s * seconds);
+}
 function multiplesOf3or5(number){
     // Create new Array
     let numArr = [];
