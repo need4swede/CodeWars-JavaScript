@@ -9,7 +9,7 @@ function countVowels(str) {
   let vowelsCount = 0;
   
   // Initialize filter
-  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
   
   // Split our input into a lowercase array of chars
   str = str.toString().toLowerCase().split("");
