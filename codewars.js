@@ -178,6 +178,11 @@ function strEnd(str, ending){
 function stringToArray(string){
 	return string.split(" ");
 }
+function sumArr (numbers) {
+  return numbers.reduce(
+    (previousValue, currentValue) => previousValue + currentValue,
+    0)
+};
 function sumMix(x){
     // Initialize sum
     let sum = 0;
