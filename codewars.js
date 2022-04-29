@@ -3,6 +3,14 @@
     Solved by Need4Swede
     https://mafshari.work
 */
+function addBinary(a,b) {
+  if(a+b >= 0) {
+        return (a+b).toString(2);
+    }
+    else {
+        return (~a+b).toString(2);
+    }
+}
 function countVowels(str) {
   
   // Initialize counter
@@ -77,6 +85,16 @@ function findCapitals(word){
   });
   // Output the array
   return indexArr;
+}
+function myFriends(friends){
+  return friends.filter(function(name) {
+    if(name.length === 4) {
+      return name;
+    }
+  });
+}
+function friend(friends){
+  return friends.filter(n => n.length === 4)
 }
 function getMiddle(s){
   // If even, return middle + next
