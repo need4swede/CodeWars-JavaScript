@@ -29,27 +29,6 @@ function booleanToString(b){
 function boolToWord( bool ){
   return bool ? 'Yes' : 'No';
 }
-function countVowels(str) {
-  
-  // Initialize counter
-  let vowelsCount = 0;
-  
-  // Initialize filter
-  const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
-  
-  // Split our input into a lowercase array of chars
-  str = str.toString().toLowerCase().split("");
-  
-  // If a char exists in our filter, add 1 to counter
-  for (let i = 0; i < str.length; i++){
-    if (vowels.includes(str[i])){
-      vowelsCount += 1;
-    }
-  }
-  
-  // Return counter total
-  return vowelsCount;
-}
 function countPsumN(input) {
 
     // If input is empty, return an empty array
@@ -76,6 +55,27 @@ function countPsumN(input) {
         return [positiveCount, negativeSum];
 
     }
+}
+function countVowels(str) {
+  
+  // Initialize counter
+  let vowelsCount = 0;
+  
+  // Initialize filter
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+  
+  // Split our input into a lowercase array of chars
+  str = str.toString().toLowerCase().split("");
+  
+  // If a char exists in our filter, add 1 to counter
+  for (let i = 0; i < str.length; i++){
+    if (vowels.includes(str[i])){
+      vowelsCount += 1;
+    }
+  }
+  
+  // Return counter total
+  return vowelsCount;
 }
 function filterNums(list){
   // Initialize a an empty array
