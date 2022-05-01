@@ -11,6 +11,24 @@ function addBinary(a,b) {
         return (~a+b).toString(2);
     }
 }
+function bmi(weight, height) {
+  let result = weight / height ** 2;
+  let weightClasses = [18.5, 'Underweight', 25.0, 'Normal', 30.0, 'Overweight', 30.1, 'Obese'];
+  for (let i = 0; i < weightClasses.length; i+=2) {
+    if (i === weightClasses.length - 2) {
+      return weightClasses[weightClasses.length - 1];
+    }
+    if (result < weightClasses[i]) {
+      return weightClasses[i+1];
+    }
+  }
+}
+function booleanToString(b){
+  return b ? 'true' : 'false';
+}
+function boolToWord( bool ){
+  return bool ? 'Yes' : 'No';
+}
 function countVowels(str) {
   
   // Initialize counter
@@ -107,6 +125,9 @@ function getMiddle(s){
 function inverseNum(number) {
     return(-number);
 }
+function litres(time) {
+  return Math.floor(time / 2);
+}
 function mergeArraysLong(array1, array2) {
     // CREATE NEW ARRAY TO STORE COMBINED ARRAYS IN
     let newArr = [];
@@ -169,6 +190,14 @@ function multiplesOf3or5(number){
       })
     // Return the sum total
       return sum
+}
+function printerError(s) {
+  let inputLength = s.length;
+  s = s.split('');
+  const alpha = Array.from(Array(13)).map((e, i) => i + 65);
+  const alphabet = alpha.map((x) => String.fromCharCode(x));
+  s.filter(function (str) { return str.indexOf(alphabet) === -1; })
+  return `${errorLength}/${inputLength}`;
 }
 function reverseString(str){
     return str.split("").reverse().join("");
