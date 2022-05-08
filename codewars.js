@@ -112,7 +112,7 @@ function myFriends(friends){
   });
 }
 function friend(friends){
-  return friends.filter(n => n.length === 4)
+  return friends.filter(fname => fname.length === 4)
 }
 function getMiddle(s){
   // If even, return middle + next
@@ -243,3 +243,63 @@ function sumMix(x){
     // Return the sum
     return sum;
 }
+
+
+
+
+
+
+
+
+
+
+
+function capitalize(title) {
+  // Split the title into an array of words
+  let titleArr = title.split(' ');
+  // Initialize an empty array to store output
+  let capTitleArr = [];
+  for (let i = 0; i < titleArr.length; i++) {
+    // Uppercase the first letter of every word in the title
+    capTitleArr.push(titleArr[i][0].toUpperCase() + titleArr[i].substring(1));
+  }
+  return capTitleArr.join(' ');
+}
+function minorize(title, minorWords) {
+  // If no minorWords, just return the title
+  if (typeof minorWords === 'undefined') {
+    return title.replace(title[0], title[0].toUpperCase());
+  }
+  console.log(minorWords.toLowerCase().split(' '));
+  minorWords.split(' ').forEach(word => {
+    let position = title.toLowerCase().indexOf(word.toLowerCase());
+    if (position === 0) {
+      position = position + title.split(' ')[0].length + 1;
+    }
+    if (title.toLowerCase().includes(word.toLowerCase())) {
+      console.log(`Position of '${word.toLowerCase()}' : ` + `${position}` + ' // Length : ' + `${word.length}`);
+      console.log(title.substring(position, position+word.length).toLowerCase());
+      title = title.replace(title.substring(position, position+word.length), title.substring(position, position+word.length).toLowerCase())
+    } else {
+      console.log(`Ignore Case : ${word}`);
+      
+      return title.replace(title[0], title[0].toUpperCase());
+    }
+  })
+  console.log('');
+  
+  return title.replace(title[0], title[0].toUpperCase());
+}
+function titleCase(title, minorWords) {
+  if (title.length < 1) {
+    return '';
+  }
+  return minorize(capitalize(title.toLowerCase()), minorWords);
+}
+
+console.log(titleCase('THE WIND IN THE WILLOWS', 'The In'));
+console.log('The Wind in the Willows');
+console.log('');
+console.log(titleCase('a Clash of Kings', 'a an the of'));
+console.log('A Clash of Kings');
+
