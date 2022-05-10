@@ -253,7 +253,6 @@ function sumMix(x){
 
 
 
-
 function capitalize(title) {
   // Split the title into an array of words
   let titleArr = title.split(' ');
