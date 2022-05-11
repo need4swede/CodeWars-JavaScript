@@ -77,6 +77,23 @@ function countVowels(str) {
   // Return counter total
   return vowelsCount;
 }
+function domainName(url){
+  // List of Prefixes
+  const prefix = ['http://', 'https://', 'www.'];
+  
+  // Removes Prefix from URL
+  prefix.forEach(ele => {
+    if (url.includes(ele)) {
+      url = url.replace(ele, '');
+    }
+  })
+  
+  // Remove Suffix from URL
+  const address = url.split('.');
+  
+  // Return Domain Name
+  return address[0];
+}
 function filterNums(list){
   // Initialize a an empty array
   let numArr = [];
